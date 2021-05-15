@@ -1,6 +1,6 @@
 import os
 
-NAME = os.environ.get("APP_NAME")
+NAME = "arcane-retreat-34149" # os.environ.get("APP_NAME")
 PORT = os.environ.get('PORT')
 
 TOKEN = os.environ.get("TOKEN")

@@ -1,6 +1,6 @@
 <div dir='rtl'>
 
-## بات ناشناس [![Telegram](https://img.shields.io/badge/Telegram-%40CseIncognitoBot-blue.svg)](https://telegram.me/CseIncognitoBot)
+## بات ناشناس [![Channel](https://img.shields.io/badge/Channel-%40CseIncognito-blue.svg)](https://telegram.me/CseIncognito) [![Bot](https://img.shields.io/badge/Bot-%40CseIncognitoBot-blue.svg)](https://telegram.me/CseIncognitoBot) [![Site](https://img.shields.io/badge/Site-CSE%20Incognito-blueviolet)](http://incognito.c1.biz)
 
 یه بات تلگرام که میتونی پیام‌هاتو براش بفرستی تا بعد چک شدن توسط ادمین به صورت ناشناس داخل کانال قرار بگیره.
 

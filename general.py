@@ -15,7 +15,7 @@ import requests
 import json
 
 from environ_vars import *
-from messages import Messages
+from classes.messages import Messages
 
 def set_user_data(context: CallbackContext) -> None:
     if not context.user_data:

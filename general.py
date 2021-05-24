@@ -1,4 +1,5 @@
 from telegram import (Update,
+                      ParseMode,
                       InlineKeyboardButton,
                       InlineKeyboardMarkup)
 
@@ -9,6 +10,9 @@ from telegram.ext import (Updater,
                           CallbackContext,
                           ConversationHandler,
                           CallbackQueryHandler)
+
+import requests
+import json
 
 from environ_vars import *
 from messages import Messages

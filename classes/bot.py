@@ -7,7 +7,7 @@ from classes.commands.reply_command import ReplyCommand
 from classes.commands.admin_command import AdminCommand
 from classes.commands.cancel_command import CancelCommand
 
-from classes.commands.query_handler import QueryHandler
+from classes.query_handler import QueryHandler
 
 from classes.web import Web
 

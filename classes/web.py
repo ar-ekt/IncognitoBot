@@ -25,14 +25,14 @@ class Web:
     def get_web_messages(context: CallbackContext) -> None:
         last_message_id = context.bot_data["last_web_message_id"]
         
-        response = requests.get("{}/api.php?TOKEN={}&last={}".format(WEB_URL, WEB_API_TOKEN, last_message_id))
+        response = requests.get("http://{}/api.php?TOKEN={}&last={}".format(WEB_URL, WEB_API_TOKEN, last_message_id))
         if response.status_code == 200:
             messages = json.loads(response.content)
             for message in messages:
                 Web.send_message_to_private_channel(context, message)
             
     def accept_web_message(message_id: int) -> None:
-        requests.get("{}/api.php?TOKEN={}&accept={}".format(WEB_URL, WEB_API_TOKEN, message_id))
+        requests.get("http://{}/api.php?TOKEN={}&accept={}".format(WEB_URL, WEB_API_TOKEN, message_id))
     
     def send_bot_message(message_text: str, reply_id: int, status: int) -> None:
-        requests.post("{}/api.php?TOKEN={}&content={}&reply_id={}&status={}".format(WEB_URL, WEB_API_TOKEN, message_text, reply_id, status))
+        requests.post("http://{}/api.php?TOKEN={}&content={}&reply_id={}&status={}".format(WEB_URL, WEB_API_TOKEN, message_text, reply_id, status))

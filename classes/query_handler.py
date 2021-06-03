@@ -25,7 +25,8 @@ class QueryHandler:
                 context.bot.sendMessage(chat_id=f"@{CHANNEL_NAME}",
                                         text=text_main_channel,
                                         reply_to_message_id=reply_id,
-                                        allow_sending_without_reply=True)
+                                        allow_sending_without_reply=True,
+                                        parse_mode=ParseMode.MARKDOWN)
                 
                 text_private_channel = Messages.MessageMenu.Send_TO_CHANNEL_STATE.format(message_text)
             
@@ -49,7 +50,8 @@ class QueryHandler:
                                         message_id=message_id,
                                         reply_to_message_id=reply_id,
                                         allow_sending_without_reply=True,
-                                        caption=caption_main_channel)
+                                        caption=caption_main_channel,
+                                        parse_mode=ParseMode.MARKDOWN)
                 
                 caption_private_channel = Messages.MessageMenu.Send_TO_CHANNEL_STATE.format(message_caption)
             

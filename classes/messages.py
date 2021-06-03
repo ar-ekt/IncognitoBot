@@ -73,7 +73,7 @@ https://github.com/ar-ekt/IncognitoBot
         ERROR = "⛔ از @{} فوروارد کن"
     
     class ChannelMessage:
-        FORMAT = "{{}}\n\n🌐 {}\n🤖 @{}\n🆔 @{}".format(WEB_URL, BOT_NAME, CHANNEL_NAME)
+        FORMAT = "{{}}\n\n[کانال](https://t.me/{}) ¤ [بات](https://t.me/{}) ¤ [سایت]({})".format(CHANNEL_NAME, BOT_NAME, WEB_URL)
         LINK = "https://t.me/{}/{}"
     
     class MessageMenu:

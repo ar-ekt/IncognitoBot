@@ -26,7 +26,8 @@ class QueryHandler:
                                         text=text_main_channel,
                                         reply_to_message_id=reply_id,
                                         allow_sending_without_reply=True,
-                                        parse_mode=ParseMode.MARKDOWN)
+                                        parse_mode=ParseMode.MARKDOWN,
+                                        disable_web_page_preview=True)
                 
                 text_private_channel = Messages.MessageMenu.Send_TO_CHANNEL_STATE.format(message_text)
             

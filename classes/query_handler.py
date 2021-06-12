@@ -21,7 +21,7 @@ class QueryHandler:
             message_text = message.text or ""
             
             if action == "send":
-                text_main_channel = Messages.ChannelMessage.FORMAT.format(message_text)
+                text_main_channel = Messages.ChannelMessage.FORMAT.format(escape_markdown(message_text))
                 context.bot.sendMessage(chat_id=f"@{CHANNEL_NAME}",
                                         text=text_main_channel,
                                         reply_to_message_id=reply_id,
@@ -45,7 +45,7 @@ class QueryHandler:
             message_caption = message.caption or ""
             
             if action == "send":
-                caption_main_channel = Messages.ChannelMessage.FORMAT.format(message_caption)
+                caption_main_channel = Messages.ChannelMessage.FORMAT.format(escape_markdown(message_caption))
                 context.bot.copyMessage(chat_id=f"@{CHANNEL_NAME}",
                                         from_chat_id=PRIVATE_CHANNEL_ID,
                                         message_id=message_id,

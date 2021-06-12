@@ -11,6 +11,8 @@ from telegram.ext import (Updater,
                           ConversationHandler,
                           CallbackQueryHandler)
 
+from telegram.utils.helpers import escape_markdown
+
 import requests
 import json
 
